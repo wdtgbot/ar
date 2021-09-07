@@ -16,7 +16,7 @@ WORKDIR /app
 # Web Server
 RUN mkdir -p /app/web \
 	&& cd /app/web/ \
-	&& wget $(echo aHR0cHMlM0EvL2dpdGh1Yi5jb20vbWF5c3dpbmQvQXJpYU5nL3JlbGVhc2VzL2Rvd25sb2FkLzEuMi4yL0FyaWFOZy0xLjIuMi1BbGxJbk9uZS56aXA= | base64 -d) -O a.zip \
+	&& wget $(echo aHR0cHM6Ly9naXRodWIuY29tL21heXN3aW5kL0FyaWFOZy9yZWxlYXNlcy9kb3dubG9hZC8xLjIuMi9BcmlhTmctMS4yLjItQWxsSW5PbmUuemlw | base64 -d) -O a.zip \
 	&& unzip -q a.zip \
 	&& rm -rf *.zip A* a*
 
