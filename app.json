@@ -1,0 +1,30 @@
+{
+	"name": "X",
+	"description": "R",
+	"repository": "https://github.com/wdtgbot/ar",
+	"keywords": ["x"],
+	"stack": "container",
+	"env": {
+		"HTPASSWD": {
+			"description": "http auth credential",
+			"required": false
+		},
+		"SECRET": {
+			"description": "rpc auth credential",
+			"required": false
+		},
+		"RCLONE_CONFIG": {
+			"description": "Rclone config to mount in one line, replace line breaks with \"\\n\"",
+			"required": true
+		},
+		"RCLONE_DESTINATION": {
+			"description": "Rclone upload destination",
+			"required": true
+		},
+		"RCLONE_DESTINATION_2": {
+			"description": "Rclone upload destination 2 (if configured)",
+			"required": false
+		}
+
+	}
+}
